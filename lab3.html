@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab2</title>
+</head>
+<link rel="stylesheet" href="lab3.css">
+<body>
+  <div class="container bordering" id="search-box">
+    <h2>Artist Directory</h2>
+    <button class="add" onclick="Add()">Add Artist</button>
+    <div class="search-bar bordering"></div>
+    <form id="addform" action="#" onsubmit="AddArtist(this);return false">
+      <input type="text" class="input-box bordering" name="name" placeholder="Artist Name" required>
+      <input type="text" class="input-box bordering" name="about" placeholder="About Artist" required>
+      <input type="url" class="input-box bordering" name="image" placeholder="Image url" required>
+      <input type="submit">
+    </form>
+  </div>
+
+  <div class="container" id="artist-container">
+
+    <div class="artist bordering">
+      <img src="https://randomuser.me/api/portraits/med/women/1.jpg" alt="artist1">
+      <button class="delete" onclick="Delete(this.parentElement)">Delete</button>
+      <div class="artist-info">
+        <h3>Trudy Goodhead</h3>
+        <p>Liberal Arts Student</p>
+      </div>
+    </div>
+
+    <div class="artist bordering">
+      <img src="https://randomuser.me/api/portraits/med/women/2.jpg" alt="artist2">
+      <button class="delete" onclick="Delete(this.parentElement)">Delete</button>
+      <div class="artist-info">
+        <h3>Agnes McDonald</h3>
+        <p>International Sculptor</p>
+      </div>
+    </div>
+  
+    <div class="artist bordering">
+      <img src="https://randomuser.me/api/portraits/med/men/1.jpg" alt="artist3">
+      <button class="delete" onclick="Delete(this.parentElement)">Delete</button>
+      <div class="artist-info">
+        <h3>Bartholomew Picwig III</h3>
+        <p>Professional Art Interpreter</p>
+      </div>
+    </div>
+
+    <div class="artist bordering">
+      <img src="https://randomuser.me/api/portraits/med/men/2.jpg" alt="artist4">
+      <button class="delete" onclick="Delete(this.parentElement)">Delete</button>
+      <div class="artist-info">
+        <h3>Selmo Kazam</h3>
+        <p>Caricature Artist</p>
+      </div>
+    </div>
+
+    <div class="artist bordering">
+      <img src="https://randomuser.me/api/portraits/med/women/3.jpg" alt="artist5">
+      <button class="delete" onclick="Delete(this.parentElement)">Delete</button>
+      <div class="artist-info">
+        <h3>Banksy Jones</h3>
+        <p>I'm not the real Banksy</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="lab3.js"></script>
+</html>
